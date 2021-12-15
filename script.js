@@ -141,16 +141,32 @@
 // ar.pop()
 // console.log(ar)
 
+//task20
 let a = Number(prompt('First number:'))
-let b = (prompt('Sign[+ or -]:'))
+let b = (prompt('Sign:'))
 let c = Number(prompt('Second number:'))
 if (b === '+') {
-    alert(a + c)
+    let s = a + c
+    alert(`Answer is ${s}`)
 } else if (b === '-') {
-    alert(a - c)
-} else {
+    let s = a - c
+    alert(`Answer is ${s}`)
+} else if (b === '/'){
+    let s = a / c
+    alert(`Answer is ${s}`)
+} else if (b === '*'){
+    let s = a * c
+    alert(`Answer is ${s}`)
+} else if (b === '%'){
+    let s = a % c
+    alert(`Answer is ${s}`)
+} else if (b === '**'){
+    let s = a ** c
+    alert(`Answer is ${s}`)
+}else {
     alert('Error! Please try again')
 }
+
 
 
 
