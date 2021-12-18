@@ -141,34 +141,131 @@
 // ar.pop()
 // console.log(ar)
 
-//task20
-let a = Number(prompt('First number:'))
-let b = (prompt('Sign:'))
-let c = Number(prompt('Second number:'))
-if (b === '+') {
-    let s = a + c
-    alert(`Answer is ${s}`)
-} else if (b === '-') {
-    let s = a - c
-    alert(`Answer is ${s}`)
-} else if (b === '/'){
-    let s = a / c
-    alert(`Answer is ${s}`)
-} else if (b === '*'){
-    let s = a * c
-    alert(`Answer is ${s}`)
-} else if (b === '%'){
-    let s = a % c
-    alert(`Answer is ${s}`)
-} else if (b === '**'){
-    let s = a ** c
-    alert(`Answer is ${s}`)
-}else {
-    alert('Error! Please try again')
+// //task20
+// let a = Number(prompt('First number:'))
+// let b = (prompt('Sign:'))
+// let c = Number(prompt('Second number:'))
+// if (b === '+') {
+//     let s = a + c
+//     alert(`Answer is ${s}`)
+// } else if (b === '-') {
+//     let s = a - c
+//     alert(`Answer is ${s}`)
+// } else if (b === '/'){
+//     let s = a / c
+//     alert(`Answer is ${s}`)
+// } else if (b === '*'){
+//     let s = a * c
+//     alert(`Answer is ${s}`)
+// } else if (b === '%'){
+//     let s = a % c
+//     alert(`Answer is ${s}`)
+// } else if (b === '**'){
+//     let s = a ** c
+//     alert(`Answer is ${s}`)
+// }else {
+//     alert('Error! Please try again')
+// }
+
+// let myArray = [5, 'hi', false, null, 0]
+// console.log(myArray[1])
+// let m = 'ultra'
+// let myObject = {
+//     'ball': 8,
+//     'start': true,
+//     'void': undefined,
+//     7: -5,
+//     2: 'test',
+//     m: '0000',
+//     700: m
+// }
+// console.log(myObject[2])
+
+
+//task21
+let a = Number(prompt('1st number:'))
+let b = Number(prompt('2nd number:'))
+let c = Number(prompt('3rd number:'))
+let d = Number(prompt('4th number:'))
+let e = Number(prompt('5th number:'))
+let f = Number(prompt('6th number:'))
+let g = Number(prompt('7th number:'))
+let even = []
+let odd = []
+if (a % 2 === 0) {
+    even.push(a)
+} else if (b % 2 === 0) {
+    even.push(b)
+} else if (c % 2 === 0) {
+    even.push(c)
+}else if (d % 2 === 0) {
+    even.push(d)
+}else if (e % 2 === 0) {
+    even.push(e)
+}else if (f % 2 === 0) {
+    even.push(f)
+} else if (g % 2 === 0) {
+    even.push(g)
+} else if (a % 3 === 0){
+    odd.push(a)
+} else if (b % 3 === 0){
+    odd.push(b)
+} else if (c % 3 === 0){
+    odd.push(c)
+} else if (d % 3 === 0){
+    odd.push(d)
+} else if (e % 3 === 0){
+    odd.push(e)
+} else if (f % 3 === 0){
+    odd.push(f)
+} else if (g % 3 === 0){
+    odd.push(g)
 }
+console.log(even)
+console.log(odd)
 
 
+// let a = Number(prompt('1st number:'))
+// let b = Number(prompt('2nd number:'))
+// if (a > b) {
+//     console.log('1st number')
+// } else if (a < b) {
+//     console.log('2nd number')
+// } else {
+//     console.log('Numbers are equal')
+// }
 
-
-
+// let a = Number(prompt('1st number:'))
+// let b = Number(prompt('2nd number:'))
+// let c = Number(prompt('3rd number:'))
+// let d = Number(prompt('4th number:'))
+// if (a>b){
+//     if (a>c){
+//         if (a>d){
+//             console.log(a)
+//         } else {
+//             console.log(d)
+//         }
+//     } else {
+//         if (c>d){
+//         console.log(c)
+//         }else {
+//                 console.log(d)
+//             }
+//         } 
+// } else {
+//     if (b>c){
+//         if (b>d){
+//             console.log(b)
+//         } else {
+//             console.log(d)
+//         }
+//     } else{
+//         if(c>d){
+//             console.log(c)
+//         } else{
+//             console.log(d)
+//         }
+//     }
+// }
 
