@@ -182,47 +182,47 @@
 // console.log(myObject[2])
 
 
-//task21
-let a = Number(prompt('1st number:'))
-let b = Number(prompt('2nd number:'))
-let c = Number(prompt('3rd number:'))
-let d = Number(prompt('4th number:'))
-let e = Number(prompt('5th number:'))
-let f = Number(prompt('6th number:'))
-let g = Number(prompt('7th number:'))
-let even = []
-let odd = []
-if (a % 2 === 0) {
-    even.push(a)
-} else if (b % 2 === 0) {
-    even.push(b)
-} else if (c % 2 === 0) {
-    even.push(c)
-}else if (d % 2 === 0) {
-    even.push(d)
-}else if (e % 2 === 0) {
-    even.push(e)
-}else if (f % 2 === 0) {
-    even.push(f)
-} else if (g % 2 === 0) {
-    even.push(g)
-} else if (a % 3 === 0){
-    odd.push(a)
-} else if (b % 3 === 0){
-    odd.push(b)
-} else if (c % 3 === 0){
-    odd.push(c)
-} else if (d % 3 === 0){
-    odd.push(d)
-} else if (e % 3 === 0){
-    odd.push(e)
-} else if (f % 3 === 0){
-    odd.push(f)
-} else if (g % 3 === 0){
-    odd.push(g)
-}
-console.log(even)
-console.log(odd)
+// //task21
+// let a = Number(prompt('1st number:'))
+// let b = Number(prompt('2nd number:'))
+// let c = Number(prompt('3rd number:'))
+// let d = Number(prompt('4th number:'))
+// let e = Number(prompt('5th number:'))
+// let f = Number(prompt('6th number:'))
+// let g = Number(prompt('7th number:'))
+// let even = []
+// let odd = []
+// if (a % 2 === 0) {
+//     even.push(a)
+// } else if (b % 2 === 0) {
+//     even.push(b)
+// } else if (c % 2 === 0) {
+//     even.push(c)
+// }else if (d % 2 === 0) {
+//     even.push(d)
+// }else if (e % 2 === 0) {
+//     even.push(e)
+// }else if (f % 2 === 0) {
+//     even.push(f)
+// } else if (g % 2 === 0) {
+//     even.push(g)
+// } else if (a % 3 === 0){
+//     odd.push(a)
+// } else if (b % 3 === 0){
+//     odd.push(b)
+// } else if (c % 3 === 0){
+//     odd.push(c)
+// } else if (d % 3 === 0){
+//     odd.push(d)
+// } else if (e % 3 === 0){
+//     odd.push(e)
+// } else if (f % 3 === 0){
+//     odd.push(f)
+// } else if (g % 3 === 0){
+//     odd.push(g)
+// }
+// console.log(even)
+// console.log(odd)
 
 
 // let a = Number(prompt('1st number:'))
@@ -269,3 +269,92 @@ console.log(odd)
 //     }
 // }
 
+
+// let c = {
+//     one: 452,
+//     'two': false,
+//     'name surname': 'elena pak',
+//     myArray: ['hello', 'world', 'js'],
+//     another: {
+//         7: 8,
+//         'test': true,
+//         blabla: null,
+//         hi: [
+//             52, 
+//             73, 
+//             {
+//                 foo: 'bar', 
+//                 'hello': [
+//                     [62, 24, 52],
+//                     [62, 24, 52],
+//                     [62, 0, 52]
+//                 ]
+//             }
+//          ]
+//     }
+// }
+// console.log(c.another.hi[2].hello[2][1])
+
+// console.log(c.myArray[1]) //hello
+// console.log(c.another.test) //true
+// console.log(c.another['test']) //true
+// c.test2 = 'vsv'
+// c['test3'] = 'jkijij'
+
+// let key = 'one'
+// console.log(c.one)
+// console.log(c[key])
+// console.log('one')
+// console.log('two')
+// console.log(c['name surname'])
+// console.log(c.two)
+
+
+// //
+// let a =[5, 3, 7, 2, 8, 0, 2]
+// for (let i = 0; i<7; i++){
+//     console.log(a[i])
+// }
+// for (let i= 0, i<7, i++){
+//         console.log(i, a[i])
+    
+// }
+
+
+// //
+// let c = [6,42,23]
+// let b = [] // [12,84,46]
+// for (let i = 0; i < c.length; i++){
+//     let x2 = c[i] * 2
+//     b.push(x2)
+// }
+// console.log(b)
+
+
+// //
+// let m = ['hello', 43, true, null, 7]
+// let n = {}
+// for (let i = 0; i < m.length; i++) {
+//     n[typeof(m[i])] = m[i]
+//     // let key = typeof(m[i])
+//     // if (key in n) {
+//     //     let inside_arr = []
+//     //     inside_arr.push(n[key])
+//     //     inside_arr.push(m[i])
+//     //     n[key] = inside_arr
+//     // } else {
+//     //     n[key = m[i]]
+//     }
+//     console.log(n)
+
+
+let a = []
+let b = []
+for (let i = 0; i < 100; i++) {
+    if (i % 3 === 0){
+    a.push(i)}
+ else if (i % 4 === 0) {
+    b.push(i)
+}}
+console.log(a)
+console.log(b)
