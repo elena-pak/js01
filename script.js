@@ -335,26 +335,41 @@
 // let m = ['hello', 43, true, null, 7]
 // let n = {}
 // for (let i = 0; i < m.length; i++) {
-//     n[typeof(m[i])] = m[i]
-//     // let key = typeof(m[i])
-//     // if (key in n) {
-//     //     let inside_arr = []
-//     //     inside_arr.push(n[key])
-//     //     inside_arr.push(m[i])
-//     //     n[key] = inside_arr
-//     // } else {
-//     //     n[key = m[i]]
+//     let key = typeof(m[i])
+//     if (key in n) {
+//         let inside_arr = []
+//         inside_arr.push(n[key])
+//         inside_arr.push(m[i])
+//         n[key] = inside_arr
+//     } else {
+//         n[key = m[i]]
 //     }
 //     console.log(n)
+// }
+
+// //task0022
+// let a = []
+// let b = []
+// for (let i = 0; i < 100; i++) {
+//     if (i % 3 === 0){
+//     a.push(i)}
+//  else if (i % 4 === 0) {
+//     b.push(i)
+// }}
+// console.log(a)
+// console.log(b)
 
 
-let a = []
-let b = []
-for (let i = 0; i < 100; i++) {
-    if (i % 3 === 0){
-    a.push(i)}
- else if (i % 4 === 0) {
-    b.push(i)
-}}
-console.log(a)
-console.log(b)
+
+
+let m = [
+    [5,3,6], // '6' == m[0][2]
+    [4,1,0],
+    [9,5,7],
+    [5,8,2],
+]
+for (let i=0; i < m.length; i++) {
+    for (let j = 0; j < m[i].length; j++){
+        console.log(m[i][j])
+    }
+}
