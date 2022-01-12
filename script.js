@@ -375,6 +375,7 @@
 // }
 
 
+<<<<<<< HEAD
 // let c = confirm()
 // ///лишний код :
 // // if (c === true) {    
@@ -401,3 +402,15 @@ for (let i=0; i<number; i++){
     }
     console.log(length1 + side1 + length2 + side2)
 }
+=======
+let a = []
+let b = []
+for (let i = 0; i < 101; i++) {
+    if (i % 3 === 0){
+    a.push(i)}
+ else if (i % 4 === 0) {
+    b.push(i)
+}}
+console.log(a)
+console.log(b)
+>>>>>>> 577ad87ff173f60664eea8ee31682f9bd13d2d62
