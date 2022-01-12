@@ -362,14 +362,42 @@
 
 
 
-let m = [
-    [5,3,6], // '6' == m[0][2]
-    [4,1,0],
-    [9,5,7],
-    [5,8,2],
-]
-for (let i=0; i < m.length; i++) {
-    for (let j = 0; j < m[i].length; j++){
-        console.log(m[i][j])
+// let m = [
+//     [5,3,6], // '6' == m[0][2]
+//     [4,1,0],
+//     [9,5,7],
+//     [5,8,2],
+// ]
+// for (let i=0; i < m.length; i++) {
+//     for (let j = 0; j < m[i].length; j++){
+//         console.log(m[i][j])
+//     }
+// }
+
+
+// let c = confirm()
+// ///лишний код :
+// // if (c === true) {    
+// //     console.log(true)
+// // } else {
+// //     console.log(false)
+// // }
+// console.log(c)
+
+// task 0024
+let number = Number(prompt('your number:'))
+let length1 = ''
+let side1 = '/'
+let length2 = ''
+let side2 = '\\'
+for (let i=0; i<number; i++){
+    length1 = ''
+    for (let j=0; j<number-i; j++){
+        length1 = length1 + ' '
     }
+    length2 = ''
+    for (let l=0; l<i*2; l++){
+        length2 = length2 + ' '
+    }
+    console.log(length1 + side1 + length2 + side2)
 }
