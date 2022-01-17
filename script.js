@@ -1,16 +1,3 @@
-// //всплывающее окно
-// alert("hello world!")
-// //вывод в консоли
-// console.log("h3110 w0r1D!")
-// //создаем переменную
-// let a = "99"
-// let name = "elena"
-// //вывод значения переменной
-// console.log(name)
-
-// //во всплывающем окне вводим значение и выводим в консоль
-// let myName = prompt("enter your name")
-// console.log(myName)
 
 // //подсчитывание возраста 
 // let year = prompt('enter your birthday')
@@ -35,48 +22,12 @@
 // let s = 3.14 * (r ** 2)
 // console.log(s)
 
-// //след новое значение увелич на 1
-// let n = 7
-// n = n + 1 //n += 1
-// alert(n)
-
-// let m = 7
-// m++
-// console.log(m)
-
 
 // //wallpapers
 // let h = Number(prompt('Wall height(m):'))
 // let a = Number(prompt('Wall weight(m):'))
 // let s = h * a
 // console.log('Wall Square is ' + s + ' m2')
-
-////if else task
-// let age = Number(prompt('How old are you?'))
-// if (age < 18){
-//     console.log('Please, leave this site!')
-//     console.log('Text text')
-// } else if(age < 21){
-//     console.log('If you are in USA, leave this site')
-// } else if(age < 25){
-//     console.log('test')
-// } else{
-//     console.log('You are welcome!')
-// }
-// console.log('The end')
-
-// let age = Number(prompt('How old are you?'))
-// if(age < 13) {
-//     console.log('You are a Child')
-// } else if (age < 19) {
-//     console.log('You are a Teenager')
-// } else if (age < 24) {
-//     console.log('You are a Student')
-// } else if (age < 65) {
-//     console.log('You are an Adult')
-// } else {
-//     console.log('You are a Pensioner')
-// }
 
 // //&& true&false=false
 // const a = Number(prompt())
@@ -429,35 +380,76 @@
 // if(k===n.length) console.log('палиндром')
 // else console.log('не палиндром')
 
-let lines = Number(prompt());
-let m = [];
+
+
+// //// буква М
+// let lines = Number(prompt());
+// let m = [];
  
-for (let i = 0; i < lines; i++) {
-    m.push([])
-    for (let j = 0; j < lines; j ++) {
-        m[i].push(' ')
-    }
+// for (let i = 0; i < lines; i++) {
+//     m.push([])
+//     for (let j = 0; j < lines; j ++) {
+//         m[i].push(' ')
+//     }
     
-}
+// }
  
-console.log(m)
+// console.log(m)
  
-for ( let i = 0; i < m.length; i++ ) {
-    m[i][0] = "*"
-    m[i][m.length] = '*'
-}
+// for ( let i = 0; i < m.length; i++ ) {
+//     m[i][0] = "*"
+//     m[i][m.length] = '*'
+// }
  
-for ( let j = 0; j < m.length / 2 + 1; j++ ) {
-    m[j][j] = "*"
-    m[j][m.length-j] = '*'
-}
+// for ( let j = 0; j < m.length / 2 + 1; j++ ) {
+//     m[j][j] = "*"
+//     m[j][m.length-j] = '*'
+// }
  
-let output;
+// let output;
  
-for ( let n = 0; n < m.length; n++ ) {
-    output = ''
-    for ( let o = 0; o < m[n].length; o++ ){
-        output += m[n][o]
+// for ( let n = 0; n < m.length; n++ ) {
+//     output = ''
+//     for ( let o = 0; o < m[n].length; o++ ){
+//         output += m[n][o]
+//     }
+//     console.log(output)
+// }
+
+
+function myMax (){
+if (a>b){
+    if (a>c){
+        if (a>d){
+            console.log(a)
+        } else {
+            console.log(d)
+        }
+    } else {
+        if (c>d){
+        console.log(c)
+        }else {
+                console.log(d)
+            }
+        } 
+} else {
+    if (b>c){
+        if (b>d){
+            console.log(b)
+        } else {
+            console.log(d)
+        }
+    } else{
+        if(c>d){
+            console.log(c)
+        } else{
+            console.log(d)
+        }
     }
-    console.log(output)
 }
+}
+let a = Number(prompt('1st number:'))
+let b = Number(prompt('2nd number:'))
+let c = Number(prompt('3rd number:'))
+let d = Number(prompt('4th number:'))
+myMax()
