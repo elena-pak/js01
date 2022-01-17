@@ -375,7 +375,6 @@
 // }
 
 
-<<<<<<< HEAD
 // let c = confirm()
 // ///лишний код :
 // // if (c === true) {    
@@ -385,32 +384,80 @@
 // // }
 // console.log(c)
 
-// task 0024
-let number = Number(prompt('your number:'))
-let length1 = ''
-let side1 = '/'
-let length2 = ''
-let side2 = '\\'
-for (let i=0; i<number; i++){
-    length1 = ''
-    for (let j=0; j<number-i; j++){
-        length1 = length1 + ' '
+// let a = []
+// let b = []
+// for (let i = 0; i < 101; i++) {
+//     if (i % 3 === 0){
+//     a.push(i)}
+//  else if (i % 4 === 0) {
+//     b.push(i)
+// }}
+// console.log(a)
+// console.log(b)
+
+
+// // task 0024
+// let number = Number(prompt('your number:'))
+// let length1 = ''
+// let side1 = '/'
+// let length2 = ''
+// let side2 = '\\'
+// for (let i=0; i<number; i++){
+//     length1 = ''
+//     for (let j=0; j<number-i; j++){
+//         length1 = length1 + ' '
+//     }
+//     length2 = ''
+//     for (let l=0; l<i*2; l++){
+//         length2 = length2 + ' '
+//     }
+//     console.log(length1 + side1 + length2 + side2)
+// }
+
+// ////палиндром
+// let n = prompt()
+
+// let k = 0
+
+// for (let i=0; i < n.length; i++) {
+//     let a = n[i]
+//     let b = n[n.length-i-1]
+//     if (a===b){
+//         k += 1
+//     }
+// }
+// if(k===n.length) console.log('палиндром')
+// else console.log('не палиндром')
+
+let lines = Number(prompt());
+let m = [];
+ 
+for (let i = 0; i < lines; i++) {
+    m.push([])
+    for (let j = 0; j < lines; j ++) {
+        m[i].push(' ')
     }
-    length2 = ''
-    for (let l=0; l<i*2; l++){
-        length2 = length2 + ' '
-    }
-    console.log(length1 + side1 + length2 + side2)
+    
 }
-=======
-let a = []
-let b = []
-for (let i = 0; i < 101; i++) {
-    if (i % 3 === 0){
-    a.push(i)}
- else if (i % 4 === 0) {
-    b.push(i)
-}}
-console.log(a)
-console.log(b)
->>>>>>> 577ad87ff173f60664eea8ee31682f9bd13d2d62
+ 
+console.log(m)
+ 
+for ( let i = 0; i < m.length; i++ ) {
+    m[i][0] = "*"
+    m[i][m.length] = '*'
+}
+ 
+for ( let j = 0; j < m.length / 2 + 1; j++ ) {
+    m[j][j] = "*"
+    m[j][m.length-j] = '*'
+}
+ 
+let output;
+ 
+for ( let n = 0; n < m.length; n++ ) {
+    output = ''
+    for ( let o = 0; o < m[n].length; o++ ){
+        output += m[n][o]
+    }
+    console.log(output)
+}
