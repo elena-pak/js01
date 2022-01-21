@@ -416,40 +416,133 @@
 //     console.log(output)
 // }
 
+// //// task 0026
+// function myMax (){
+// if (a>b){
+//     if (a>c){
+//         if (a>d){
+//             console.log(a)
+//         } else {
+//             console.log(d)
+//         }
+//     } else {
+//         if (c>d){
+//         console.log(c)
+//         }else {
+//                 console.log(d)
+//             }
+//         } 
+// } else {
+//     if (b>c){
+//         if (b>d){
+//             console.log(b)
+//         } else {
+//             console.log(d)
+//         }
+//     } else{
+//         if(c>d){
+//             console.log(c)
+//         } else{
+//             console.log(d)
+//         }
+//     }
+// }
+// }
+// let a = Number(prompt('1st number:'))
+// let b = Number(prompt('2nd number:'))
+// let c = Number(prompt('3rd number:'))
+// let d = Number(prompt('4th number:'))
+// myMax()
 
-function myMax (){
-if (a>b){
-    if (a>c){
-        if (a>d){
-            console.log(a)
-        } else {
-            console.log(d)
-        }
-    } else {
-        if (c>d){
-        console.log(c)
-        }else {
-                console.log(d)
-            }
-        } 
-} else {
-    if (b>c){
-        if (b>d){
-            console.log(b)
-        } else {
-            console.log(d)
-        }
-    } else{
-        if(c>d){
-            console.log(c)
-        } else{
-            console.log(d)
-        }
-    }
-}
-}
-let a = Number(prompt('1st number:'))
-let b = Number(prompt('2nd number:'))
-let c = Number(prompt('3rd number:'))
-let d = Number(prompt('4th number:'))
-myMax()
+// function myMax (arr){
+//     let maxNum = arr[0]
+//     for (let i=0; i< arr.length; i++){
+//         if (maxNum < arr[i]){
+//             maxNum = arr[i]
+//         }
+//     }
+//     return maxNum
+// }
+// console.log(myMax([5,1,23,3,6]))
+
+
+
+// //// diff ways of functions
+// function mySum(a,b){
+//     return a + b
+// }
+
+// let myMult = function (a,b){
+//     return a*b
+// }
+
+// let myDiv = (a,b) => {return a/b}
+// let myExp = (a,b) => a**b
+
+// console.log(mySum(2,5))
+// console.log(myMult(2,5))
+// console.log(myDiv(10,2))
+// console.log(myExp(3,4))
+
+// //// factorial
+// n = Number(prompt())
+// console.log(factorial(n))
+
+// function factorial (num) {
+//     let res = 1
+//     for (i=1; i<=num; i++) {
+//         res *= i
+//     }
+//     return res
+// }
+
+// let fact = (num) => {let res = 1
+//     for (i=1; i<=num; i++) {
+//         res *= i
+//     }
+// return res 
+// }
+
+
+
+
+//// task0027
+// Перепишите функцию, используя оператор '?' или '||'
+// function checkAge(age) {
+//     return (age>18) || confirm('Родители разрешили?');
+//   }
+// // Функция min(a, b)
+// function min(a, b){
+//     if (a<b){
+//         return a
+//     } else {
+//         return b
+//     }
+// }
+// // Функция pow(x,n)
+// function pow(x, n){
+//     let result
+//     for (let i = 1; i < n; i++) {
+//      result *= x;
+//     }
+//     return result;
+//   }
+  
+//   let x = prompt('x:');
+//   let n = prompt('n:');
+  
+//   if (n < 1) {
+//     alert('Try again');
+//   } else {
+//     alert(pow(x, n));
+//   }
+// Перепишите с использованием функции-стрелки
+let ask = (question, yes, no) => {
+    confirm(question) yes() || no();
+  }
+  
+  ask(
+    "Вы согласны?",
+    () => alert("Вы согласились."),
+    () => alert("Вы отменили выполнение.")
+  );
