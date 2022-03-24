@@ -92,31 +92,31 @@
 // ar.pop()
 // console.log(ar)
 
-// //task20
-// let a = Number(prompt('First number:'))
-// let b = (prompt('Sign:'))
-// let c = Number(prompt('Second number:'))
-// if (b === '+') {
-//     let s = a + c
-//     alert(`Answer is ${s}`)
-// } else if (b === '-') {
-//     let s = a - c
-//     alert(`Answer is ${s}`)
-// } else if (b === '/'){
-//     let s = a / c
-//     alert(`Answer is ${s}`)
-// } else if (b === '*'){
-//     let s = a * c
-//     alert(`Answer is ${s}`)
-// } else if (b === '%'){
-//     let s = a % c
-//     alert(`Answer is ${s}`)
-// } else if (b === '**'){
-//     let s = a ** c
-//     alert(`Answer is ${s}`)
-// }else {
-//     alert('Error! Please try again')
-// }
+//task20
+let a = Number(prompt('First number:'))
+let b = (prompt('Sign:'))
+let c = Number(prompt('Second number:'))
+if (b === '+') {
+    let s = a + c
+    alert(`Answer is ${s}`)
+} else if (b === '-') {
+    let s = a - c
+    alert(`Answer is ${s}`)
+} else if (b === '/'){
+    let s = a / c
+    alert(`Answer is ${s}`)
+} else if (b === '*'){
+    let s = a * c
+    alert(`Answer is ${s}`)
+} else if (b === '%'){
+    let s = a % c
+    alert(`Answer is ${s}`)
+} else if (b === '**'){
+    let s = a ** c
+    alert(`Answer is ${s}`)
+}else {
+    alert('Error! Please try again')
+}
 
 // let myArray = [5, 'hi', false, null, 0]
 // console.log(myArray[1])
@@ -536,13 +536,13 @@
 //   } else {
 //     alert(pow(x, n));
 //   }
-// Перепишите с использованием функции-стрелки
-let ask = (question, yes, no) => {
-    confirm(question) yes() || no();
-  }
+// // Перепишите с использованием функции-стрелки
+// let ask = (question, yes, no) => {
+//     confirm(question) yes() || no();
+//   }
   
-  ask(
-    "Вы согласны?",
-    () => alert("Вы согласились."),
-    () => alert("Вы отменили выполнение.")
-  );
+//   ask(
+//     "Вы согласны?",
+//     () => alert("Вы согласились."),
+//     () => alert("Вы отменили выполнение.")
+//   );
