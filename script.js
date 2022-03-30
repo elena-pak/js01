@@ -92,31 +92,31 @@
 // ar.pop()
 // console.log(ar)
 
-//task20
-let a = Number(prompt('First number:'))
-let b = (prompt('Sign:'))
-let c = Number(prompt('Second number:'))
-if (b === '+') {
-    let s = a + c
-    alert(`Answer is ${s}`)
-} else if (b === '-') {
-    let s = a - c
-    alert(`Answer is ${s}`)
-} else if (b === '/'){
-    let s = a / c
-    alert(`Answer is ${s}`)
-} else if (b === '*'){
-    let s = a * c
-    alert(`Answer is ${s}`)
-} else if (b === '%'){
-    let s = a % c
-    alert(`Answer is ${s}`)
-} else if (b === '**'){
-    let s = a ** c
-    alert(`Answer is ${s}`)
-}else {
-    alert('Error! Please try again')
-}
+// //task20
+// let a = Number(prompt('First number:'))
+// let b = (prompt('Sign:'))
+// let c = Number(prompt('Second number:'))
+// if (b === '+') {
+//     let s = a + c
+//     alert(`Answer is ${s}`)
+// } else if (b === '-') {
+//     let s = a - c
+//     alert(`Answer is ${s}`)
+// } else if (b === '/'){
+//     let s = a / c
+//     alert(`Answer is ${s}`)
+// } else if (b === '*'){
+//     let s = a * c
+//     alert(`Answer is ${s}`)
+// } else if (b === '%'){
+//     let s = a % c
+//     alert(`Answer is ${s}`)
+// } else if (b === '**'){
+//     let s = a ** c
+//     alert(`Answer is ${s}`)
+// }else {
+//     alert('Error! Please try again')
+// }
 
 // let myArray = [5, 'hi', false, null, 0]
 // console.log(myArray[1])
@@ -546,3 +546,45 @@ if (b === '+') {
 //     () => alert("Вы согласились."),
 //     () => alert("Вы отменили выполнение.")
 //   );
+
+
+// task0028
+// Создайте калькулятор
+let calculator = {
+    sum() {
+      return this.a + this.b;
+    },
+  
+    mul() {
+      return this.a * this.b;
+    },
+  
+    read() {
+      this.a = +prompt('a?', 0);
+      this.b = +prompt('b?', 0);
+    }
+  };
+  
+  calculator.read();
+  alert( calculator.sum() );
+  alert( calculator.mul() );
+
+
+// Цепь вызовов
+  let ladder = {
+    step: 0,
+    up() {
+      this.step++;
+      return this;
+    },
+    down() {
+      this.step--;
+      return this;
+    },
+    showStep() {
+      alert( this.step );
+      return this;
+    }
+  }
+  
+  ladder.up().up().down().up().down().showStep();
